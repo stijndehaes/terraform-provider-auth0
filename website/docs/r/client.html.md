@@ -207,3 +207,12 @@ Attributes exported by this resource include:
 * `grant_types` - List(String). Types of grants that this client is authorized to use.
 * `custom_login_page_on` - Boolean. Indicates whether or not a custom login page is to be used.
 * `token_endpoint_auth_method` - String. Defines the requested authentication method for the token endpoint. Options include `none` (public client without a client secret), `client_secret_post` (client uses HTTP POST parameters), `client_secret_basic` (client uses HTTP Basic).
+
+## Import
+
+Clients can be import using the client_id,
+e.g.
+
+```
+$ terraform import auth0_client.my_client client_id
+```

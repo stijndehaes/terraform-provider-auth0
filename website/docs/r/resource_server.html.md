@@ -66,3 +66,12 @@ Attributes exported by this resource include:
 * `signing_secret` - String. Secret used to sign tokens when using symmetric algorithms (HS256).
 * `token_lifetime` - Integer. Number of seconds during which access tokens issued for this resource server from the token endpoint remain valid.
 * `token_lifetime_for_web` - Integer. Number of seconds during which access tokens issued for this resource server via implicit or hybrid flows remain valid. Cannot be greater than the `token_lifetime` value.
+
+## Import
+
+Resources servers can be import using the ID,
+e.g.
+
+```
+$ terraform import auth0_resource_server.my_resource_server ID
+```
